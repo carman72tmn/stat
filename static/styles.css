@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background: #111827;
+    color: #f9fafb;
+}
+
+.header nav {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header a {
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1.3fr;
+    }
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(17, 24, 39, 0.08);
+}
+
+.auth-card {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 8px;
+    background: #1d4ed8;
+    color: #fff;
+    cursor: pointer;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+.messages {
+    list-style: none;
+    padding: 0;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #e0f2fe;
+}
+
+.errorlist {
+    color: #b91c1c;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
